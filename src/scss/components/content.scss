@@ -1,0 +1,7 @@
+.content {
+}
+.content__wrapper {
+  display: grid;
+  grid-template-columns: minmax(644px, 8fr) minmax(375px, 2fr);
+  gap: 20px;
+}

@@ -1,0 +1,92 @@
+.about {
+  position: relative;
+  padding: 24px;
+  background: $darkGrayColor;
+  border-radius: 16px;
+  border: 1px solid $grayColor;
+  background: $darkGrayColor;
+}
+
+.about__inner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.about__img {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.about__info {
+}
+
+.about__name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.about__position {
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.3;
+}
+
+.about__contacts {
+  margin-bottom: 16px;
+}
+
+.about__contact {
+  display: flex;
+  align-items: center;
+}
+
+.about__contact + .about__contact {
+  margin-top: 12px;
+}
+
+.about__icon-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 40px;
+  background: rgba(2, 178, 254, 0.16);
+  box-shadow: 8px 8px 16px 0px rgba(2, 178, 254, 0.06),
+    -8px -8px 16px 0px rgba(2, 178, 254, 0.06);
+}
+
+.about__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.about__contact-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.about__description {
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.6;
+  border-radius: 8px;
+  border: 1px solid #24272d;
+  background: rgba(43, 45, 54, 0.72);
+  line-height: 24px;
+}
+
+.about__close {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}

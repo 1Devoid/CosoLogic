@@ -1,0 +1,221 @@
+.chat {
+  padding-top: 40px;
+  margin-bottom: 54px;
+}
+
+.chat__body {
+  background: $darkGrayColor;
+  border-radius: 16px;
+  border: 1px solid $grayColor;
+  margin-bottom: 20px;
+}
+
+.chat__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $grayColor;
+  padding: 24px;
+}
+
+.chat__title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-right: 25px;
+}
+
+.chat__header-inner {
+  display: flex;
+  align-items: center;
+}
+
+.chat__header-text {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.6;
+  margin-right: 16px;
+}
+
+.chat__header-users {
+  display: flex;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.chat__header-user {
+  position: relative;
+  z-index: 10;
+
+  &:nth-child(2) {
+    transform: translateX(-8px);
+    z-index: 9;
+  }
+
+  &:nth-child(3) {
+    transform: translateX(-16px);
+    z-index: 8;
+  }
+
+  &:nth-child(4) {
+    transform: translateX(-24px);
+    z-index: 7;
+  }
+
+  &:nth-child(5) {
+    transform: translateX(-32px);
+    z-index: 6;
+  }
+
+  &:nth-child(6) {
+    transform: translateX(-40px);
+    z-index: 5;
+  }
+
+  &:nth-child(7) {
+    transform: translateX(-48px);
+    z-index: 4;
+  }
+
+  &:nth-child(8) {
+    transform: translateX(-56px);
+    z-index: 3;
+  }
+
+  &:nth-child(9) {
+    transform: translateX(-64px);
+    z-index: 2;
+  }
+
+  &:nth-child(10) {
+    transform: translateX(-72px);
+    z-index: 1;
+  }
+}
+
+.chat__header-user-img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.chat__content {
+  padding: 24px 24px 82px 24px;
+  margin: 0;
+}
+
+.chat__content-item {
+  margin-bottom: 32px;
+}
+
+.chat__content-item:last-child {
+  margin-bottom: 0;
+}
+
+// Default color scheme for content-info is #895fe5
+// for another color add class .orange or .blue to .chat__content-info:
+.chat__content-info {
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 10px;
+  margin-bottom: 12px;
+  border-radius: 40px;
+  color: #895fe5;
+  background: rgba(137, 95, 229, 0.16);
+  box-shadow: 8px 8px 16px 0px rgba(137, 95, 229, 0.06),
+    -8px -8px 16px 0px rgba(137, 95, 229, 0.06);
+}
+
+.chat__content-info.orange {
+  color: #fdba74;
+  background: rgba(253, 186, 116, 0.16);
+  box-shadow: 8px 8px 16px 0px rgba(253, 186, 116, 0.06),
+    -8px -8px 16px 0px rgba(253, 186, 116, 0.06);
+}
+
+.chat__content-info.blue {
+  color: #02b2fe;
+  background: rgba(2, 178, 254, 0.16);
+  box-shadow: 8px 8px 16px 0px rgba(2, 178, 254, 0.06),
+    -8px -8px 16px 0px rgba(2, 178, 254, 0.06);
+}
+
+.chat__content-info-time {
+  margin-right: 6px;
+}
+
+.chat__content-inner {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.chat__content-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  border-radius: 50%;
+}
+
+.chat__input-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 16px;
+  border: 1px solid $darkGrayColor;
+  background: $darkGrayColor;
+}
+
+.chat__input {
+  width: 100%;
+  padding: 20px 76px 20px 24px;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+  }
+}
+
+.chat__input-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 24px;
+  cursor: pointer;
+}
+
+// Default color scheme for content-badge is #895fe5
+// for another color add class .orange or .blue to .chat__content-info:
+
+.chat__content-badge {
+  color: #895fe5;
+  margin: 0 4px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 2px 6px;
+  border-radius: 18px;
+  background: rgba(137, 95, 229, 0.16);
+  box-shadow: 8px 8px 16px 0px rgba(137, 95, 229, 0.06),
+    -8px -8px 16px 0px rgba(137, 95, 229, 0.06);
+}
+
+.chat__content-badge.orange {
+  color: #fdba74;
+  background: rgba(253, 186, 116, 0.16);
+  box-shadow: 8px 8px 16px 0px rgba(253, 186, 116, 0.06),
+    -8px -8px 16px 0px rgba(253, 186, 116, 0.06);
+}
+
+.chat__content-badge.blue {
+  color: #02b2fe;
+  background: rgba(2, 178, 254, 0.16);
+  box-shadow: 8px 8px 16px 0px rgba(2, 178, 254, 0.06),
+    -8px -8px 16px 0px rgba(2, 178, 254, 0.06);
+}

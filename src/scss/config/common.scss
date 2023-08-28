@@ -1,0 +1,51 @@
+html {
+  font-size: 14px;
+
+  @include desktop {
+    font-size: 16px;
+  }
+}
+
+.body {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: 1.2;
+  color: $whiteColor;
+  overflow-x: hidden;
+  height: 100%;
+  min-width: 320px;
+  background: $blackColor;
+  // font-variant-numeric: lining-nums;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 296px 10fr;
+}
+.main {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+*::selection {
+  color: $blackColor;
+  background: $whiteColor;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #f4f0f5;
+  border-radius: 10px;
+  border: 3px solid #e9e7e7;
+}
