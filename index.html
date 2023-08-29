@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="static/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230829100049">
+  <title>Cosologic</title>
+</head>
+
+
+<body class="body">
+  <div class="wrapper">
+    <aside class="menu">
+  <div class="menu__container">
+    <a class="menu__logo" href="#">
+      <img src="images/icons/logo.svg" alt="Logo.">
+    </a>
+    <div class="menu__search-field">
+      <img class="menu__search-icon" src="images/icons/search.svg" alt="Search.">
+      <input class="menu__search-input" type="text" name="search" id="search" placeholder="Search">
+    </div>
+    <button class="menu__new-chat" type="button">
+      <img src="images/icons/add.svg" alt="Add.">
+      New Chat
+    </button>
+    <div class="menu__chats">
+      <div class="menu__chats-title">Chats</div>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item menu__chats-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed menu__chats-btn" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              <img class="menu__chats-btn-icon" src="images/icons/open-chat.svg">
+              Open Chat
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+            <ul class="accordion-body menu__chats-body">
+              <li class="menu__chats-field">
+                <img class="menu__chats-field-icon" src="images/icons/chat-ask.svg">
+                Chat 1
+              </li>
+              <li class="menu__chats-field">
+                <img class="menu__chats-field-icon" src="images/icons/chat-done.svg">
+                Chat 2
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="accordion-item menu__chats-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed menu__chats-btn" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              <img class="menu__chats-btn-icon" src="images/icons/closed-chat.svg">
+              Closed Chat
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <ul class="accordion-body menu__chats-body">
+              <li class="menu__chats-field">
+                <img class="menu__chats-field-icon" src="images/icons/chat-ask.svg">
+                Chat 3
+              </li>
+              <li class="menu__chats-field">
+                <img class="menu__chats-field-icon" src="images/icons/chat-done.svg">
+                Chat 4
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="accordion-item menu__chats-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed menu__chats-btn" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              <img class="menu__chats-btn-icon" src="images/icons/open-workflow.svg">
+              Open Workflow
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <ul class="accordion-body menu__chats-body">
+              <li class="menu__chats-field">
+                <img class="menu__chats-field-icon" src="images/icons/chat-ask.svg">
+                Workflow 1
+              </li>
+              <li class="menu__chats-field">
+                <img class="menu__chats-field-icon" src="images/icons/chat-done.svg">
+                Workflow 2
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="accordion-item menu__chats-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed menu__chats-btn" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+              <img class="menu__chats-btn-icon" src="images/icons/closed-workflow.svg">
+              Closed Workflow
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+            <ul class="accordion-body menu__chats-body">
+              <li class="menu__chats-field">
+                <img class="menu__chats-field-icon" src="images/icons/chat-ask.svg">
+                Workflow 3
+              </li>
+              <li class="menu__chats-field">
+                <img class="menu__chats-field-icon" src="images/icons/chat-done.svg">
+                Workflow 4
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu__group-btns">
+      <button class="menu__group-btn" type="button">
+        <img src="images/icons/clear.svg">
+        Clear conversations
+      </button>
+      <button class="menu__group-btn" type="button">
+        <img src="images/icons/light.svg">
+        Light mode
+      </button>
+      <button class="menu__group-btn" type="button">
+        <img src="images/icons/log-out.svg">
+        Log out
+      </button>
+    </div>
+  </div>
+</aside>
+    <main class="main">
+      <div class="content">
+        <header class="header">
+          <div class="container">
+            <div class="header__wrapper">
+              <div class="header__inner">
+                <picture><source srcset="images/user-image.webp" type="image/webp"><img class="header__user-img" src="images/user-image.png" alt="User image."></picture>
+                <div class="header__user-name">Jake Paul</div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="container">
+          <div class="content__wrapper">
+            <section class="chat">
+              <div class="chat__body">
+                <div class="chat__header">
+                  <h1 class="chat__title">Chat</h1>
+                  <div class="chat__header-inner">
+                    <div class="chat__header-text">New chat with</div>
+                    <ul class="chat__header-users">
+                      <li class="chat__header-user">
+                        <picture><source srcset="images/user-image.webp" type="image/webp"><img class="chat__header-user-img" src="images/user-image.png" alt="User image."></picture>
+                      </li>
+                      <li class="chat__header-user">
+                        <picture><source srcset="images/user-image-2.webp" type="image/webp"><img class="chat__header-user-img" src="images/user-image-2.png" alt="User image."></picture>
+                      </li>
+                      <li class="chat__header-user">
+                        <picture><source srcset="images/user-image-3.webp" type="image/webp"><img class="chat__header-user-img" src="images/user-image-3.png" alt="User image."></picture>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                
+                
+                <ul class="chat__content">
+                  <li class="chat__content-item">
+                    <div class="chat__content-info">
+                      <div class="chat__content-info-time">13:42</div>
+                      <div class="chat__content-info-name">Jake Paul</div>
+                    </div>
+                    <div class="chat__content-inner">
+                      <picture><source srcset="images/user-image.webp" type="image/webp"><img class="chat__content-img" src="images/user-image.png" alt="User image."></picture>
+                      <div class="chat__content-massage">I've lost my id.</div>
+                    </div>
+                  </li>
+                  <li class="chat__content-item">
+                    <div class="chat__content-info blue">
+                      <div class="chat__content-info-time">13:43</div>
+                      <div class="chat__content-info-name">CosoCentral</div>
+                    </div>
+                    <div class="chat__content-inner">
+                      <picture><source srcset="images/user-image-2.webp" type="image/webp"><img class="chat__content-img" src="images/user-image-2.png" alt="User image."></picture>
+                      <div class="chat__content-massage">I understand you've lost your Facility Access Badge, is that
+                        correct?</div>
+                    </div>
+                  </li>
+                  <li class="chat__content-item">
+                    <div class="chat__content-info">
+                      <div class="chat__content-info-time">13:44</div>
+                      <div class="chat__content-info-name">Jake Paul</div>
+                    </div>
+                    <div class="chat__content-inner">
+                      <picture><source srcset="images/user-image.webp" type="image/webp"><img class="chat__content-img" src="images/user-image.png" alt="User image."></picture>
+                      <div class="chat__content-massage">Yes.</div>
+                    </div>
+                  </li>
+                  <li class="chat__content-item">
+                    <div class="chat__content-info blue">
+                      <div class="chat__content-info-time">13:44</div>
+                      <div class="chat__content-info-name">CosoCentral</div>
+                    </div>
+                    <div class="chat__content-inner">
+                      <picture><source srcset="images/user-image-2.webp" type="image/webp"><img class="chat__content-img" src="images/user-image-2.png" alt="User image."></picture>
+                      <div class="chat__content-massage">Diego Roel is our Security
+                        Officer. I'll transfer you to his Assistant.</div>
+                    </div>
+                  </li>
+                  <li class="chat__content-item chat__content-item--notification">
+                    <div class="chat__content-inner">
+                      <picture><source srcset="images/user-image-3.webp" type="image/webp"><img class="chat__content-img" src="images/user-image-3.png" alt="User image."></picture>
+                      <div class="chat__content-info-name">Diego Assistant</div>
+                      <div class="orange chat__content-badge">Invited</div>
+                      <div class="chat__content-massage">Invited to the chat</div>
+                    </div>
+                  </li>
+                  <li class="chat__content-item">
+                    <div class="chat__content-info orange">
+                      <div class="chat__content-info-time">13:45</div>
+                      <div class="chat__content-info-name">Diego Assistant</div>
+                    </div>
+                    <div class="chat__content-inner">
+                      <picture><source srcset="images/user-image-3.webp" type="image/webp"><img class="chat__content-img" src="images/user-image-3.png" alt="User image."></picture>
+                      <div class="chat__content-massage">Hi, Kevin. It sounds like you‘ve lost your Facility Access
+                        Badge. Is that correct?</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="chat__input-field">
+                <input class="chat__input" type="text" name="massage" id="massage" placeholder="Send a message...">
+                <img class="chat__input-icon" src="images/icons/send.svg" alt="Send.">
+              </div>
+            </section>
+            <div class="details">
+              <div class="about">
+                <div class="about__inner">
+                  <picture><source srcset="images/user-image-3.webp" type="image/webp"><img class="about__img" src="images/user-image-3.png" alt="User image."></picture>
+                  <div class="about__info">
+                    <div class="about__name">Diego Roel</div>
+                    <div class="about__position">Security Officer</div>
+                  </div>
+                </div>
+                <div class="about__contacts">
+                  <div class="about__contact">
+                    <div class="about__icon-block">
+                      <img class="about__icon" src="images/icons/phone.svg" alt="Phone.">
+                    </div>
+                    <div class="about__contact-text">256-555-1212</div>
+                  </div>
+                  <div class="about__contact">
+                    <div class="about__icon-block">
+                      <img class="about__icon" src="images/icons/mail.svg" alt="E-mail.">
+                    </div>
+                    <div class="about__contact-text">droel@cosologic.com</div>
+                  </div>
+                </div>
+                <div class="about__description">
+                  Diego Roel is our Security Officer. He has been with the company for 11 years.
+                  Diego can answer any security retaled questions you may have.
+                  If Diego`s Assistant can`t help, fell to contact him directly.
+                </div>
+                <img class="about__close" src="images/icons/close.svg" alt="Close.">
+              </div>
+              <div class="employees">
+                
+                <ul class="employees__list">
+                  <li class="employees__list-item">
+                    <picture><source srcset="images/user-image-2.webp" type="image/webp"><img class="employees__item-img" src="images/user-image-2.png" alt="User image."></picture>
+                    <div class="employees__item-inner">
+                      <h3 class="employees__item-title">CosoCentral</h3>
+                      <div class="employees__item-subtitle">CosoLogic</div>
+                    </div>
+                  </li>
+                  <li class="employees__list-item">
+                    <picture><source srcset="images/user-image-4.webp" type="image/webp"><img class="employees__item-img" src="images/user-image-4.png" alt="User image."></picture>
+                    <div class="employees__item-inner">
+                      <h3 class="employees__item-title">HR</h3>
+                    </div>
+                  </li>
+                  <li class="employees__list-item aside">
+                    <picture><source srcset="images/user-image-5.webp" type="image/webp"><img class="employees__item-img" src="images/user-image-5.png" alt="User image."></picture>
+                    <div class="employees__item-inner">
+                      <h3 class="employees__item-title">Jacob Regan</h3>
+                      <div class="employees__item-subtitle">Comp & Benefits</div>
+                    </div>
+                  </li>
+                  <li class="employees__list-item aside">
+                    <picture><source srcset="images/user-image-5.webp" type="image/webp"><img class="employees__item-img" src="images/user-image-5.png" alt="User image."></picture>
+                    <div class="employees__item-inner">
+                      <h3 class="employees__item-title">Jacob Regan</h3>
+                      <div class="employees__item-subtitle">Comp & Benefits</div>
+                    </div>
+                  </li>
+                  <li class="employees__list-item aside">
+                    <picture><source srcset="images/user-image-5.webp" type="image/webp"><img class="employees__item-img" src="images/user-image-5.png" alt="User image."></picture>
+                    <div class="employees__item-inner">
+                      <h3 class="employees__item-title">Jacob Regan</h3>
+                      <div class="employees__item-subtitle">Comp & Benefits</div>
+                    </div>
+                  </li>
+                  <li class="employees__list-item">
+                    <picture><source srcset="images/user-image-5.webp" type="image/webp"><img class="employees__item-img" src="images/user-image-5.png" alt="User image."></picture>
+                    <div class="employees__item-inner">
+                      <h3 class="employees__item-title">Jacob Regan</h3>
+                      <div class="employees__item-subtitle">Comp & Benefits</div>
+                    </div>
+                  </li>
+                  <li class="employees__list-item aside">
+                    <picture><source srcset="images/user-image-5.webp" type="image/webp"><img class="employees__item-img" src="images/user-image-5.png" alt="User image."></picture>
+                    <div class="employees__item-inner">
+                      <h3 class="employees__item-title">Jacob Regan</h3>
+                      <div class="employees__item-subtitle">Comp & Benefits</div>
+                    </div>
+                  </li>
+                </ul>
+                <img class="employees__close" src="images/icons/close.svg" alt="Close.">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/app.min.js?_v=20230829100049"></script>
+</body>
+
+</html>
