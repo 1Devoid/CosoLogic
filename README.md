@@ -1,63 +1,52 @@
 # Start Template: Gulp + WebPack + Babel
 
-## Для роботи використовуйте такі команди
+## Use the following commands to work
 
-- Для встановлення всіх залежностей: `npm install`;
-- Для запуску збирача Gulp потрібно використовувати: `npm run dev`;
-- Для складання проекту в режимі ``production'`: `npm run build`;
+- To install all dependencies: `npm install`;
+- To start the Gulp collector, you need to use: `npm run dev`;
+- To compile the project in `production` mode: `npm run build`;
 
-## Що робить Gulp?
+## What does Gulp do?
 
-- стискає HTML у режимі `production`;
-- видаляє коментарі з HTML у режимі `production`;
-- Збирає SCSS файли, додає вендорні префікси;
-- видаляє коментарі із SCSS файлів;
-- в режимі `production` стискає CSS та робить копію без стиснення;
-- конвертує шрифти в `.ttf`, і з `.ttf` у `woff/woff2`;
-- Створює файл для підключення шрифтів. Даний файл створюється таким шляхом: `src/scss/config/fonts.scss`, виглядає це так:
+- compresses HTML in production mode;
+- removes comments from HTML in production mode;
+- Collects SCSS files, adds vendor prefixes;
+- removes comments from SCSS files;
+- in production mode, compresses CSS and makes a copy without compression;
+- converts fonts to `.ttf`, and from `.ttf` to `woff/woff2`;
+- Creates a file to connect fonts. This file is created as follows: `src/scss/config/fonts.scss`, it looks like this:
 
-```scss
-@font-face {
-   font-family: Inter;
-   font-display: swap;
-   src: url('../fonts/Inter-Bold.woff2') format('woff2');
-   font-weight: 700;
-   font-style: normal;
-}
-```
+### WARNING!!!
 
-### УВАГА!!!
+> If there is already a `fonts.scss` file in the `src/scss/config` folder - then when adding new fonts you MUST **REMOVE** the old `fonts.scss` file. Don't worry, when you restart the build - Gulp will convert all new fonts and create a new `fonts.scss` file.
 
-> Якщо в папці `src/scss/config` - вже є файл `fonts.scss` - тоді при додаванні нових шрифтів **НУЖНО ВИДАЛИТИ** старий файл `fonts.scss`. Не хвилюйся, при повторному запуску складання - Gulp все нові шрифти сконвертує і створить новий файл `fonts.scss`.
+Next, what else can collect:
 
-Далі, що ще вміє збирання:
+- compresses images and additionally converts them into `.webp' format and connects them if the browser supports this format;
+- copies the `/static` folder with its contents to the final build. That is, any files can be placed in this folder and it will be added to the final assembly;
+- a separate `$npm run svgSprive` command creates "svg sprites";
+- before each start of the collector, the folder with the final project is cleaned so as not to collect garbage;
+- with a separate `$npm run zip` command, you can archive the final folder for the customer with the project name;
+- also for development `gulp' starts the server with automatic reload of the window in the browser when files are changed in the project;
+- the final project is uploaded to the hosting using a separate `$npm run deployFTP' command. The options for sending the project to the desired hosting are specified in the file: `gulp/config/ftp.js`.
 
-- стискає зображення та конвертує їх додатково у формат `.webp` та підключає їх якщо браузер підтримує цей формат;
-- копіює папку `/static` із вмістом у фінальне складання. Тобто будь-які файли можна помістити в цю папку і вона буде додана до фінальної збірки;
-- окремою командою `$npm run svgSprive` створює "svg cпрайти";
-- перед кожним запуском збирача чистить папку з фінальним проектом, щоб не збирати сміття;
-- окремою командою `$npm run zip` можна заархівувати фінальну папку для замовника з ім'ям проекту;
-- також для розробки `gulp` запускає сервер з автоматичним перезавантаженням вікна в браузері при зміні файлів у проекті;
-- окремою командою `$npm run deployFTP` фінальний проект вивантажується на хостинг. Опції для надсилання проекту на потрібний хостинг вказуються у файлі: `gulp/config/ftp.js`.
+## What does WebPack do?
 
-## Що робить WebPack?
-
-- саме `webpack` у даному збиранні займається обробкою файлів c JavaScript;
-- підтримується модульне підключення скриптів `import/export`;
-- при імпорті немає необхідності писати розширення файлу `.js`, так само якщо здійснюється імпорт із файлу `index.js` необов'язково це вказувати:
+- `webpack' in this template deals with the processing of c JavaScript files;
+- modular connection of import/export scripts is supported;
+- when importing, there is no need to write the extension of the `.js` file, and if the import is carried out from the `index.js` file, it is not necessary to specify it:
 
 ```javascript
-import * as flsFunctions from './modules' // './modules/index.js'
+import * as flsFunctions from './modules'; // './modules/index.js'
 ```
 
-- `webpack` за допомогою `babel` дозволяє тобі писати код на улюбленому **ES6+**;
-- в режимі ``production'` при фінальному збиранні файли JS стискаються, а зайві коментарі видаляються.
+- `webpack` using `babel` allows you to write code on your favorite **ES6+**;
+- in `production` mode, JS files are compressed during final assembly, and redundant comments are removed.
 
-## Фінал
+## Final
 
-Окремою вишнею є плагін `gh-pages` для деплою папки `/dist` на окрему гілку GitHub, щоб гарно розгорнути свій проект на GitHub Pages. Для цього в package.json вкажи в полі **homepage** посилання на свою сторінку gh-pages:
+A separate cherry is the `gh-pages` plugin for deploying the `/dist` folder to a separate GitHub branch to nicely deploy your project to GitHub Pages. To do this, in package.json, specify the link to your gh-pages page in the **homepage** field:
 
 ```json
 "homepage": "https://{UserName}.github.io/{NameRepo}",
 ```
-
