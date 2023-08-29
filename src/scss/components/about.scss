@@ -5,10 +5,9 @@
   border-radius: 16px;
   border: 1px solid $grayColor;
   background: $darkGrayColor;
-  height: 100%;
-  max-height: 42vh;
+  // height: 100%;
+  // max-height: 42vh;
   margin-bottom: 20px;
-  overflow: hidden;
 }
 
 .about__inner {
@@ -81,9 +80,8 @@
   border: 1px solid #24272d;
   background: rgba(43, 45, 54, 0.72);
   line-height: 24px;
-  height: 100%;
-  max-height: 14vh;
-  overflow-y: scroll;
+  // height: 100%;
+  // max-height: 14vh;
 }
 
 .about__close {
