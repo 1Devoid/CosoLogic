@@ -2,204 +2,110 @@
 <html lang="en">
 @@include('html/head.html', { 'title': 'Cosologic' })
 
-<body class="body">
-  <div class="wrapper">
-    @@include('html/aside.html')
-    <main class="main">
-      <div class="content">
-        <header class="header">
-          <div class="container">
-            <div class="header__wrapper">
-              <div class="header__inner">
-                <img class="header__user-img" src="images/user-image.png" alt="User image.">
-                <div class="header__user-name">Jake Paul</div>
-              </div>
-            </div>
-          </div>
-        </header>
-        <div class="container">
-          <div class="content__wrapper">
-            <section class="chat">
-              <div class="chat__body">
-                <div class="chat__header">
-                  <h1 class="chat__title">Chat</h1>
-                  <div class="chat__header-inner">
-                    <div class="chat__header-text">New chat with</div>
-                    <ul class="chat__header-users">
-                      <li class="chat__header-user">
-                        <img class="chat__header-user-img" src="images/user-image.png" alt="User image.">
-                      </li>
-                      <li class="chat__header-user">
-                        <img class="chat__header-user-img" src="images/user-image-2.png" alt="User image.">
-                      </li>
-                      <li class="chat__header-user">
-                        <img class="chat__header-user-img" src="images/user-image-3.png" alt="User image.">
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- Default color scheme for content-info is #895fe5
-                          for another color add class .orange or .blue to .chat__content-info: -->
-                <!-- Default color scheme for content-badge is #895fe5
-                          for another color add class .orange or .blue to .chat__content-badge: -->
-                <ul class="chat__content">
-                  <li class="chat__content-item">
-                    <div class="chat__content-info">
-                      <div class="chat__content-info-time">13:42</div>
-                      <div class="chat__content-info-name">Jake Paul</div>
-                    </div>
-                    <div class="chat__content-inner">
-                      <img class="chat__content-img" src="images/user-image.png" alt="User image.">
-                      <div class="chat__content-massage">I've lost my id.</div>
-                    </div>
-                  </li>
-                  <li class="chat__content-item">
-                    <div class="chat__content-info blue">
-                      <div class="chat__content-info-time">13:43</div>
-                      <div class="chat__content-info-name">CosoCentral</div>
-                    </div>
-                    <div class="chat__content-inner">
-                      <img class="chat__content-img" src="images/user-image-2.png" alt="User image.">
-                      <div class="chat__content-massage">I understand you've lost your Facility Access Badge, is that
-                        correct?</div>
-                    </div>
-                  </li>
-                  <li class="chat__content-item">
-                    <div class="chat__content-info">
-                      <div class="chat__content-info-time">13:44</div>
-                      <div class="chat__content-info-name">Jake Paul</div>
-                    </div>
-                    <div class="chat__content-inner">
-                      <img class="chat__content-img" src="images/user-image.png" alt="User image.">
-                      <div class="chat__content-massage">Yes.</div>
-                    </div>
-                  </li>
-                  <li class="chat__content-item">
-                    <div class="chat__content-info blue">
-                      <div class="chat__content-info-time">13:44</div>
-                      <div class="chat__content-info-name">CosoCentral</div>
-                    </div>
-                    <div class="chat__content-inner">
-                      <img class="chat__content-img" src="images/user-image-2.png" alt="User image.">
-                      <div class="chat__content-massage">Diego Roel is our Security
-                        Officer. I'll transfer you to his Assistant.</div>
-                    </div>
-                  </li>
-                  <li class="chat__content-item chat__content-item--notification">
-                    <div class="chat__content-inner">
-                      <img class="chat__content-img" src="images/user-image-3.png" alt="User image.">
-                      <div class="chat__content-info-name">Diego Assistant</div>
-                      <div class="chat__content-badge orange">Invited</div>
-                      <div class="chat__content-massage">Invited to the chat</div>
-                    </div>
-                  </li>
-                  <li class="chat__content-item">
-                    <div class="chat__content-info orange">
-                      <div class="chat__content-info-time">13:45</div>
-                      <div class="chat__content-info-name">Diego Assistant</div>
-                    </div>
-                    <div class="chat__content-inner">
-                      <img class="chat__content-img" src="images/user-image-3.png" alt="User image.">
-                      <div class="chat__content-massage">Hi, Kevin. It sounds like you‘ve lost your Facility Access
-                        Badge. Is that correct?</div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="chat__input-field">
-                <input class="chat__input" type="text" name="massage" id="massage" placeholder="Send a message...">
-                <img class="chat__input-icon" src="images/icons/send.svg" alt="Send.">
-              </div>
-            </section>
-            <div class="details">
-              <div class="about">
-                <div class="about__inner">
-                  <img class="about__img" src="images/user-image-3.png" alt="User image.">
-                  <div class="about__info">
-                    <div class="about__name">Diego Roel</div>
-                    <div class="about__position">Security Officer</div>
-                  </div>
-                </div>
-                <div class="about__contacts">
-                  <div class="about__contact">
-                    <div class="about__icon-block">
-                      <img class="about__icon" src="images/icons/phone.svg" alt="Phone.">
-                    </div>
-                    <div class="about__contact-text">256-555-1212</div>
-                  </div>
-                  <div class="about__contact">
-                    <div class="about__icon-block">
-                      <img class="about__icon" src="images/icons/mail.svg" alt="E-mail.">
-                    </div>
-                    <div class="about__contact-text">droel@cosologic.com</div>
-                  </div>
-                </div>
-                <div class="about__description">
-                  Diego Roel is our Security
-                  Officer. He has been with the company for 11 years. Diefo can answer any security retaled questions
-                  you may have. If
-                  Diego`s Assistant can`t help, fell to contact him directly.
-                </div>
-                <img class="about__close" src="images/icons/close.svg" alt="Close.">
-              </div>
-              <div class="employees">
-                <!-- To make an element on the side, you need to add class .aside to .employees__list-item -->
-                <ul class="employees__list">
-                  <li class="employees__list-item">
-                    <img class="employees__item-img" src="images/user-image-2.png" alt="User image.">
-                    <div class="employees__item-inner">
-                      <h3 class="employees__item-title">CosoCentral</h3>
-                      <div class="employees__item-subtitle">CosoLogic</div>
-                    </div>
-                  </li>
-                  <li class="employees__list-item">
-                    <img class="employees__item-img" src="images/user-image-4.png" alt="User image.">
-                    <div class="employees__item-inner">
-                      <h3 class="employees__item-title">HR</h3>
-                    </div>
-                  </li>
-                  <li class="employees__list-item aside">
-                    <img class="employees__item-img" src="images/user-image-5.png" alt="User image.">
-                    <div class="employees__item-inner">
-                      <h3 class="employees__item-title">Jacob Regan</h3>
-                      <div class="employees__item-subtitle">Comp & Benefits</div>
-                    </div>
-                  </li>
-                  <li class="employees__list-item aside">
-                    <img class="employees__item-img" src="images/user-image-5.png" alt="User image.">
-                    <div class="employees__item-inner">
-                      <h3 class="employees__item-title">Jacob Regan</h3>
-                      <div class="employees__item-subtitle">Comp & Benefits</div>
-                    </div>
-                  </li>
-                  <li class="employees__list-item aside">
-                    <img class="employees__item-img" src="images/user-image-5.png" alt="User image.">
-                    <div class="employees__item-inner">
-                      <h3 class="employees__item-title">Jacob Regan</h3>
-                      <div class="employees__item-subtitle">Comp & Benefits</div>
-                    </div>
-                  </li>
-                  <li class="employees__list-item">
-                    <img class="employees__item-img" src="images/user-image-5.png" alt="User image.">
-                    <div class="employees__item-inner">
-                      <h3 class="employees__item-title">Jacob Regan</h3>
-                      <div class="employees__item-subtitle">Comp & Benefits</div>
-                    </div>
-                  </li>
-                  <li class="employees__list-item aside">
-                    <img class="employees__item-img" src="images/user-image-5.png" alt="User image.">
-                    <div class="employees__item-inner">
-                      <h3 class="employees__item-title">Jacob Regan</h3>
-                      <div class="employees__item-subtitle">Comp & Benefits</div>
-                    </div>
-                  </li>
-                </ul>
-                <img class="employees__close" src="images/icons/close.svg" alt="Close.">
-              </div>
-            </div>
-          </div>
-        </div>
+<body class="body start-body">
+  <div class="wrapper-full">
+    <header class="start-header">
+      <div class="start-header-container">
+        <a href="chat.html">
+          <img class="start-header-logo" src="images/icons/logotype.svg" alt="Logo.">
+        </a>
       </div>
+    </header>
+    <main class="main-full">
+      <section class="employment">
+        <div class="employment-wrapper">
+          <h1 class="employment-title">Welcome</h1>
+          <div class="employment-description">Placeholder text section that explains what the application</div>
+          <form class="employment-form" action="#">
+            <div class="employment-inner">
+              <div class="employment-row">
+                <input class="employment-input" type="text" name="first-name" placeholder="Enter First name">
+                <input class="employment-input" type="text" name="last-name" placeholder="Enter Last name">
+              </div>
+              <input class="employment-input" type="text" name="location" placeholder="Enter your Location">
+              <input class="employment-input" type="text" name="age" placeholder="Enter your age">
+              <textarea class="employment-input" name="details"
+                placeholder="Describe the details (your work experience, education, etc.)"></textarea>
+            </div>
+            <div class="employment-decor">
+              <div class="employment-decor-row"></div>
+              <div class="employment-decor-or">or</div>
+              <div class="employment-decor-row"></div>
+            </div>
+            <div class="employment-file">
+              <label class="employment-file-label" id="employment-file" for="file">
+                <input class="employment-file-field" type="file" id="file">
+                <svg class="employment-file-drop" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="#1B1C24" />
+                  <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#2A2D34" />
+                  <path
+                    d="M21.125 12.125C21.125 11.5027 20.6223 11 20 11C19.3777 11 18.875 11.5027 18.875 12.125V20.6574L16.2945 18.077C15.8551 17.6375 15.1414 17.6375 14.702 18.077C14.2625 18.5164 14.2625 19.2301 14.702 19.6695L19.202 24.1695C19.6414 24.609 20.3551 24.609 20.7945 24.1695L25.2945 19.6695C25.734 19.2301 25.734 18.5164 25.2945 18.077C24.8551 17.6375 24.1414 17.6375 23.702 18.077L21.125 20.6574V12.125ZM13.25 23.375C12.009 23.375 11 24.384 11 25.625V26.75C11 27.991 12.009 29 13.25 29H26.75C27.991 29 29 27.991 29 26.75V25.625C29 24.384 27.991 23.375 26.75 23.375H23.1816L21.5891 24.9676C20.7102 25.8465 19.2863 25.8465 18.4074 24.9676L16.8184 23.375H13.25ZM26.1875 25.3438C26.4113 25.3438 26.6259 25.4326 26.7841 25.5909C26.9424 25.7491 27.0312 25.9637 27.0312 26.1875C27.0312 26.4113 26.9424 26.6259 26.7841 26.7841C26.6259 26.9424 26.4113 27.0312 26.1875 27.0312C25.9637 27.0312 25.7491 26.9424 25.5909 26.7841C25.4326 26.6259 25.3438 26.4113 25.3438 26.1875C25.3438 25.9637 25.4326 25.7491 25.5909 25.5909C25.7491 25.4326 25.9637 25.3438 26.1875 25.3438Z"
+                    fill="#02B2FE" />
+                </svg>
+                <div class="employment-file-title">
+                  Upload Resume
+                </div>
+                <div class="employment-file-description">
+                  PDF, WORD and PPT formats, Up to 200 Mb
+                </div>
+              </label>
+              <div class="employment-info hidden" id="employment-file-info">
+                <div class="employment-info-top">
+                  <svg class="employment-info-icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.5 20C0.5 9.23045 9.23045 0.5 20 0.5C30.7696 0.5 39.5 9.23045 39.5 20C39.5 30.7696 30.7696 39.5 20 39.5C9.23045 39.5 0.5 30.7696 0.5 20Z"
+                      fill="#1B1C24" />
+                    <path
+                      d="M0.5 20C0.5 9.23045 9.23045 0.5 20 0.5C30.7696 0.5 39.5 9.23045 39.5 20C39.5 30.7696 30.7696 39.5 20 39.5C9.23045 39.5 0.5 30.7696 0.5 20Z"
+                      stroke="#2A2D34" />
+                    <g clip-path="url(#clip0_104_1881)">
+                      <path
+                        d="M21.6673 19.166H16.6673M18.334 22.4993H16.6673M23.334 15.8327H16.6673M26.6673 15.666V24.3327C26.6673 25.7328 26.6673 26.4329 26.3948 26.9677C26.1552 27.4381 25.7727 27.8205 25.3023 28.0602C24.7675 28.3327 24.0674 28.3327 22.6673 28.3327H17.334C15.9339 28.3327 15.2338 28.3327 14.699 28.0602C14.2286 27.8205 13.8462 27.4381 13.6065 26.9677C13.334 26.4329 13.334 25.7328 13.334 24.3327V15.666C13.334 14.2659 13.334 13.5658 13.6065 13.031C13.8462 12.5606 14.2286 12.1782 14.699 11.9385C15.2338 11.666 15.9339 11.666 17.334 11.666H22.6673C24.0674 11.666 24.7675 11.666 25.3023 11.9385C25.7727 12.1782 26.1552 12.5606 26.3948 13.031C26.6673 13.5658 26.6673 14.2659 26.6673 15.666Z"
+                        stroke="#02B2FE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_104_1881">
+                        <rect width="16" height="20" fill="white" transform="translate(12 10)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <div class="employment-info-about">
+                    <div class="employment-info-name">My document.doc</div>
+                    <div class="employment-info-size">29.79 KB</div>
+                  </div>
+                  <div class="employment-info-inner">
+                    <svg class="employment-info-done" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <rect width="20" height="20" rx="10" fill="#02B2FE" />
+                      <path d="M6 10L7.99552 12.1769C8.39809 12.6161 9.09294 12.6081 9.48525 12.1597L14 7"
+                        stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
+                    </svg>
+                    <svg class="employment-info-trash" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.3333 4.99996V4.33329C13.3333 3.39987 13.3333 2.93316 13.1517 2.57664C12.9919 2.26304 12.7369 2.00807 12.4233 1.84828C12.0668 1.66663 11.6001 1.66663 10.6667 1.66663H9.33333C8.39991 1.66663 7.9332 1.66663 7.57668 1.84828C7.26308 2.00807 7.00811 2.26304 6.84832 2.57664C6.66667 2.93316 6.66667 3.39987 6.66667 4.33329V4.99996M8.33333 9.58329V13.75M11.6667 9.58329V13.75M2.5 4.99996H17.5M15.8333 4.99996V14.3333C15.8333 15.7334 15.8333 16.4335 15.5608 16.9683C15.3212 17.4387 14.9387 17.8211 14.4683 18.0608C13.9335 18.3333 13.2335 18.3333 11.8333 18.3333H8.16667C6.76654 18.3333 6.06647 18.3333 5.53169 18.0608C5.06129 17.8211 4.67883 17.4387 4.43915 16.9683C4.16667 16.4335 4.16667 15.7334 4.16667 14.3333V4.99996"
+                        stroke="#A1A6AB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="employment-info-progress">
+                  <div class="employment-info-progress-bar"></div>
+                  <div class="employment-info-progress-count">100%</div>
+                </div>
+              </div>
+            </div>
+            <button class="employment-next" type="button">
+              Next
+              <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.16602 14H23.8327M23.8327 14L16.8327 7M23.8327 14L16.8327 21" stroke="white" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
   </div>
 

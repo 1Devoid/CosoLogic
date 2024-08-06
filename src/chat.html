@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', { 'title': 'Cosologic' })
+
+<body class="body">
+  <div class="wrapper">
+    @@include('html/aside.html')
+    <main class="main">
+      <div class="content">
+        <header class="header">
+          <div class="container">
+            <div class="header__wrapper">
+              <div class="header__inner">
+                <img class="header__user-img" src="images/user-image.png" alt="User image.">
+                <div class="header__user-name">Jake Paul</div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="container">
+          <div class="content__wrapper">
+            <section class="chat">
+              <div class="chat__body">
+                <div class="chat__header">
+                  <h1 class="chat__title">Chat</h1>
+                  <div class="chat__header-inner">
+                    <div class="chat__header-text">New chat with</div>
+                    <ul class="chat__header-users">
+                      <li class="chat__header-user">
+                        <img class="chat__header-user-img" src="images/user-image.png" alt="User image.">
+                      </li>
+                      <li class="chat__header-user">
+                        <img class="chat__header-user-img" src="images/user-image-2.png" alt="User image.">
+                      </li>
+                      <li class="chat__header-user">
+                        <img class="chat__header-user-img" src="images/user-image-3.png" alt="User image.">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Default color scheme for content-info is #895fe5
+                          for another color add class .orange or .blue to .chat__content-info: -->
+                <!-- Default color scheme for content-badge is #895fe5
+                          for another color add class .orange or .blue to .chat__content-badge: -->
+                <ul class="chat__content">
+                  <li class="chat__content-item">
+                    <div class="chat__content-info">
+                      <div class="chat__content-info-time">13:42</div>
+                      <div class="chat__content-info-name">Jake Paul</div>
+                    </div>
+                    <div class="chat__content-inner">
+                      <img class="chat__content-img" src="images/user-image.png" alt="User image.">
+                      <div class="chat__content-massage">I've lost my id.</div>
+                    </div>
+                  </li>
+                  <li class="chat__content-item">
+                    <div class="chat__content-info blue">
+                      <div class="chat__content-info-time">13:43</div>
+                      <div class="chat__content-info-name">CosoCentral</div>
+                    </div>
+                    <div class="chat__content-inner">
+                      <img class="chat__content-img" src="images/user-image-2.png" alt="User image.">
+                      <div class="chat__content-massage">I understand you've lost your Facility Access Badge, is that
+                        correct?</div>
+                    </div>
+                  </li>
+                  <li class="chat__content-item">
+                    <div class="chat__content-info">
+                      <div class="chat__content-info-time">13:44</div>
+                      <div class="chat__content-info-name">Jake Paul</div>
+                    </div>
+                    <div class="chat__content-inner">
+                      <img class="chat__content-img" src="images/user-image.png" alt="User image.">
+                      <div class="chat__content-massage">Yes.</div>
+                    </div>
+                  </li>
+                  <li class="chat__content-item">
+                    <div class="chat__content-info blue">
+                      <div class="chat__content-info-time">13:44</div>
+                      <div class="chat__content-info-name">CosoCentral</div>
+                    </div>
+                    <div class="chat__content-inner">
+                      <img class="chat__content-img" src="images/user-image-2.png" alt="User image.">
+                      <div class="chat__content-massage">Diego Roel is our Security
+                        Officer. I'll transfer you to his Assistant.</div>
+                    </div>
+                  </li>
+                  <li class="chat__content-item chat__content-item--notification">
+                    <div class="chat__content-inner">
+                      <img class="chat__content-img" src="images/user-image-3.png" alt="User image.">
+                      <div class="chat__content-info-name">Diego Assistant</div>
+                      <div class="chat__content-badge orange">Invited</div>
+                      <div class="chat__content-massage">Invited to the chat</div>
+                    </div>
+                  </li>
+                  <li class="chat__content-item">
+                    <div class="chat__content-info orange">
+                      <div class="chat__content-info-time">13:45</div>
+                      <div class="chat__content-info-name">Diego Assistant</div>
+                    </div>
+                    <div class="chat__content-inner">
+                      <img class="chat__content-img" src="images/user-image-3.png" alt="User image.">
+                      <div class="chat__content-massage">Hi, Kevin. It sounds like you‘ve lost your Facility Access
+                        Badge. Is that correct?</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="chat__input-field">
+                <input class="chat__input" type="text" name="massage" id="massage" placeholder="Send a message...">
+                <img class="chat__input-icon" src="images/icons/send.svg" alt="Send.">
+              </div>
+            </section>
+            <div class="details">
+              <div class="about">
+                <div class="about__inner">
+                  <img class="about__img" src="images/user-image-3.png" alt="User image.">
+                  <div class="about__info">
+                    <div class="about__name">Diego Roel</div>
+                    <div class="about__position">Security Officer</div>
+                  </div>
+                </div>
+                <div class="about__contacts">
+                  <div class="about__contact">
+                    <div class="about__icon-block">
+                      <img class="about__icon" src="images/icons/phone.svg" alt="Phone.">
+                    </div>
+                    <div class="about__contact-text">256-555-1212</div>
+                  </div>
+                  <div class="about__contact">
+                    <div class="about__icon-block">
+                      <img class="about__icon" src="images/icons/mail.svg" alt="E-mail.">
+                    </div>
+                    <div class="about__contact-text">droel@cosologic.com</div>
+                  </div>
+                </div>
+                <div class="about__description">
+                  Diego Roel is our Security
+                  Officer. He has been with the company for 11 years. Diefo can answer any security retaled questions
+                  you may have. If
+                  Diego`s Assistant can`t help, fell to contact him directly.
+                </div>
+                <img class="about__close" src="images/icons/close.svg" alt="Close.">
+              </div>
+              <div class="employees">
+                <!-- To make an element on the side, you need to add class .aside to .employees__list-item -->
+                <ul class="employees__list">
+                  <li class="employees__list-item">
+                    <img class="employees__item-img" src="images/user-image-2.png" alt="User image.">
+                    <div class="employees__item-inner">
+                      <h3 class="employees__item-title">CosoCentral</h3>
+                      <div class="employees__item-subtitle">CosoLogic</div>
+                    </div>
+                  </li>
+                  <li class="employees__list-item">
+                    <img class="employees__item-img" src="images/user-image-4.png" alt="User image.">
+                    <div class="employees__item-inner">
+                      <h3 class="employees__item-title">HR</h3>
+                    </div>
+                  </li>
+                  <li class="employees__list-item aside">
+                    <img class="employees__item-img" src="images/user-image-5.png" alt="User image.">
+                    <div class="employees__item-inner">
+                      <h3 class="employees__item-title">Jacob Regan</h3>
+                      <div class="employees__item-subtitle">Comp & Benefits</div>
+                    </div>
+                  </li>
+                  <li class="employees__list-item aside">
+                    <img class="employees__item-img" src="images/user-image-5.png" alt="User image.">
+                    <div class="employees__item-inner">
+                      <h3 class="employees__item-title">Jacob Regan</h3>
+                      <div class="employees__item-subtitle">Comp & Benefits</div>
+                    </div>
+                  </li>
+                  <li class="employees__list-item aside">
+                    <img class="employees__item-img" src="images/user-image-5.png" alt="User image.">
+                    <div class="employees__item-inner">
+                      <h3 class="employees__item-title">Jacob Regan</h3>
+                      <div class="employees__item-subtitle">Comp & Benefits</div>
+                    </div>
+                  </li>
+                  <li class="employees__list-item">
+                    <img class="employees__item-img" src="images/user-image-5.png" alt="User image.">
+                    <div class="employees__item-inner">
+                      <h3 class="employees__item-title">Jacob Regan</h3>
+                      <div class="employees__item-subtitle">Comp & Benefits</div>
+                    </div>
+                  </li>
+                  <li class="employees__list-item aside">
+                    <img class="employees__item-img" src="images/user-image-5.png" alt="User image.">
+                    <div class="employees__item-inner">
+                      <h3 class="employees__item-title">Jacob Regan</h3>
+                      <div class="employees__item-subtitle">Comp & Benefits</div>
+                    </div>
+                  </li>
+                </ul>
+                <img class="employees__close" src="images/icons/close.svg" alt="Close.">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  @@include('html/script.html')
+</body>
+
+</html>
