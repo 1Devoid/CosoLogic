@@ -1,5 +1,8 @@
-@keyframes name {
-  0% {}
-
-  100% {}
+@keyframes progressAnimation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
