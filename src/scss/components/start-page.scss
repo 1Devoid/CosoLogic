@@ -52,6 +52,16 @@
   padding: 0 15px;
 }
 
+.employment-wrapper {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .employment-wrapper {
+    padding-bottom: 50px;
+  }
+}
+
 .employment-title {
   font-size: 72px;
   font-weight: 700;
@@ -151,12 +161,14 @@ textarea.employment-input {
   display: flex;
   align-items: center;
 }
+
 @media (max-width: 768px) {
   .employment-decor {
     margin-top: 16px;
     margin-bottom: 16px;
   }
 }
+
 .employment-decor-row {
   width: 100%;
   background-color: #8e99ab;
@@ -193,12 +205,14 @@ textarea.employment-input {
     background: #0090cd;
   }
 }
+
 @media (max-width: 768px) {
   .employment-next {
     margin: 0 auto;
     max-width: 500px;
   }
 }
+
 .employment-file {
   margin-bottom: 36px;
   background: #02b2fe24;
@@ -256,14 +270,17 @@ textarea.employment-input {
     min-height: 40px;
   }
 }
+
 .employment-info-about {
   margin-right: auto;
 }
+
 @media (max-width: 768px) {
   .employment-info-about {
     max-width: 200px;
   }
 }
+
 .employment-info-name {
   font-size: 16px;
   font-weight: 600;
@@ -284,11 +301,13 @@ textarea.employment-input {
   align-items: center;
   gap: 20px;
 }
+
 @media (max-width: 768px) {
   .employment-info-inner {
     gap: 6px;
   }
 }
+
 .employment-info-done {
   box-shadow: 8px 8px 16px 0px rgba(2, 178, 254, 0.16),
     -8px -8px 16px 0px rgba(2, 178, 254, 0.16);
