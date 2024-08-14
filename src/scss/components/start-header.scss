@@ -1,0 +1,29 @@
+.start-header {
+  padding-top: 40px;
+  padding-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .start-header {
+    padding-top: 20px;
+    padding-bottom: 24px;
+  }
+}
+
+.start-header-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+@media (max-width: 768px) {
+  .start-header-container {
+    padding: 0 23px;
+  }
+}
+
+@media (max-width: 768px) {
+  .start-header-logo {
+    max-width: 150px;
+  }
+}

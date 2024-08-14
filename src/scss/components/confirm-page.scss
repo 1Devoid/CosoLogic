@@ -1,0 +1,273 @@
+.confirmation {
+  padding: 46px 0;
+}
+
+@media (max-width: 768px) {
+  .confirmation {
+    padding: 24px 0;
+  }
+}
+
+.confirmation-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+  color: #ffffff;
+  margin-bottom: 46px;
+}
+
+@media (max-width: 768px) {
+  .confirmation-title {
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 32px;
+  }
+}
+
+.confirmation-wrapper {
+  background-color: #1e1f25;
+  border-radius: 24px;
+}
+
+.confirmation-inner {
+  padding: 20px 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.info {
+  padding-right: 15px;
+  max-height: 500px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+@media (max-width: 768px) {
+  .confirmation-inner {
+    padding: 16px 12px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.confirmation-btns {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  padding: 20px 24px;
+  border-top: 1px solid #484b52;
+}
+
+@media (max-width: 768px) {
+  .confirmation-btns {
+    flex-direction: column-reverse;
+    padding: 16px 12px;
+    gap: 16px;
+  }
+}
+
+.confirmation-btn {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  padding: 15px;
+  width: 100%;
+  max-width: 245px;
+  border-radius: 32px;
+  transition: 0.2s all;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .confirmation-btn {
+    font-size: 16px;
+    padding: 12px;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+}
+
+.confirmation-btn--back {
+  color: #02b2fe;
+  background: transparent;
+  border: 1px solid #02b2fe;
+
+  &:hover {
+    background: #ffffff;
+  }
+}
+
+.confirmation-btn--approve {
+  color: #ffffff;
+  background: #02b2fe;
+  border-color: transparent;
+  box-shadow: 8px 8px 16px 0px rgba(2, 178, 254, 0.16),
+    -8px -8px 16px 0px rgba(2, 178, 254, 0.16);
+
+  &:hover {
+    background: #0090cd;
+  }
+}
+
+.info-block {
+  padding: 20px 0;
+  border-bottom: 2px solid #2a2d34;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.info-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .info-title {
+    margin-bottom: 16px;
+  }
+}
+
+.info-contact {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.info-contact-span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #cccccc;
+}
+
+.info-contact-link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #02b2fe;
+}
+
+.info-controls {
+  padding-top: 20px;
+}
+
+.info-controls-inner {
+  display: flex;
+  gap: 12px;
+}
+
+.info-controls-icon {
+  cursor: pointer;
+  stroke: #a1a6ab;
+  transition: 0.2s all;
+
+  &:hover {
+    stroke: #0090cd;
+  }
+}
+
+.info-controls-icon.active {
+  stroke: #0090cd;
+}
+
+.info-controls-textarea {
+  margin-top: 20px;
+  resize: none;
+  width: 100%;
+  max-width: 600px;
+  height: 120px;
+  background-color: #1b1c24;
+  border: 1px solid #24272d;
+  border-radius: 16px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #ffffff;
+
+  &::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    color: #ccccccb2;
+  }
+}
+
+.info-controls-textarea.hidden {
+  display: none;
+}
+
+.info-inner-multi {
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 240px;
+    height: 1px;
+    background-color: #2a2d34;
+  }
+}
+
+.info-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #cccccc;
+
+  & ul {
+    margin-bottom: 0;
+  }
+
+  & li {
+    list-style-type: disc;
+  }
+}
+
+.info-inner-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+  .info-inner-row {
+    flex-direction: column;
+    align-items: start;
+    gap: 6px;
+  }
+}
+
+.info-inner-position {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.info-inner-date {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  color: #cccccc;
+}
+
+.info-inner-place {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #cccccc;
+  margin-bottom: 12px;
+}
