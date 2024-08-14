@@ -51,27 +51,22 @@ function initializeFileInputHandlers() {
       .addEventListener('click', function () {
         document.getElementById('employment-file-info').classList.add('hidden');
         document.getElementById('employment-file').classList.remove('hidden');
-        document.querySelector('.employment-next').classList.add('hidden');
 
         document.getElementById('file').value = '';
         document.querySelector('.employment-info-name').textContent = '';
         document.querySelector('.employment-info-size').textContent = '';
       });
 
-    function checkFileAndToggleVisibility() {
-      const fileInput = document.querySelector('.employment-file-field');
-      const nextElement = document.querySelector('.employment-next');
-
-      if (fileInput.files.length > 0) {
-        nextElement.classList.remove('hidden');
-      } else {
-        nextElement.classList.add('hidden');
-      }
-    }
-
+    // logic to check that the file has been downloaded
     document
-      .querySelector('.employment-file-field')
-      .addEventListener('change', checkFileAndToggleVisibility);
+      .querySelector('.employment-next')
+      .addEventListener('click', function () {
+        let fileInput = document.getElementById('file');
+        if (fileInput.files.length > 0) {
+          window.location.href =
+            'https://1devoid.github.io/CosoLogic/confirm-page.html';
+        }
+      });
   }
 }
 
