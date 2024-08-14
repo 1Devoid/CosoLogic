@@ -184,8 +184,13 @@ textarea.employment-input {
   }
 }
 
-.employment-next.hidden {
-  display: none;
+.employment-next.disabled {
+  box-shadow: unset;
+  background: #a5a5a5;
+
+  &:hover {
+    background: #a5a5a5;
+  }
 }
 
 .employment-file {

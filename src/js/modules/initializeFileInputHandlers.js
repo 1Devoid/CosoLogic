@@ -67,6 +67,36 @@ function initializeFileInputHandlers() {
             'https://1devoid.github.io/CosoLogic/confirm-page.html';
         }
       });
+
+    // logic to check that the file has been downloaded or fields is not empty
+    function checkEmploymentForm() {
+      const form = document.querySelector('.employment-form');
+      const inputs = form.querySelectorAll(
+        'input[type="text"], input[type="number"], input[type="email"], input[type="file"]'
+      );
+      const nextButton = document.querySelector('.employment-next');
+      let isFilled = false;
+
+      inputs.forEach((input) => {
+        if (
+          (input.type === 'file' && input.files.length > 0) ||
+          (input.type !== 'file' && input.value.trim() !== '')
+        ) {
+          isFilled = true;
+        }
+      });
+
+      if (isFilled) {
+        nextButton.classList.remove('disabled');
+      } else {
+        nextButton.classList.add('disabled');
+      }
+    }
+
+    document.querySelectorAll('.employment-form input').forEach((input) => {
+      input.addEventListener('input', checkEmploymentForm);
+      input.addEventListener('change', checkEmploymentForm);
+    });
   }
 }
 
